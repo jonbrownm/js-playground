@@ -32,6 +32,24 @@ module.exports = function(grunt){
 
 
 		// --------------------------------------
+		// Browserify Configuration
+		// --------------------------------------
+
+		browserify: {
+			dist: {
+				options: {
+					transform: [
+						['babelify', {'presets': ['es2015']}]
+					]
+				},
+				files: {
+					'src/js/app.min.js': ['src/js/app.js']
+				}
+			}
+		},
+
+
+		// --------------------------------------
 		// Connect Configuration
 		// --------------------------------------
 
@@ -68,6 +86,7 @@ module.exports = function(grunt){
 	// -----------------------------------------
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-browserify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 
@@ -76,6 +95,6 @@ module.exports = function(grunt){
 	// Register Grunt tasks
 	// -----------------------------------------
 
-	grunt.registerTask('default',  ['sass','connect','watch']);
+	grunt.registerTask('default',  ['sass','browserify','connect','watch']);
 
 };
