@@ -2,15 +2,21 @@
 	"name": "Init Project",
 	"version": "1.2.0",
 	"author": "Jonathan Brown",
+	"description": "",
 	"private": true,
+	"main": "Gruntfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
 	"devDependencies": {
-		"babel-core": "^6.26.0",
-		"babelify": "^8.0.0",
-		"grunt": "^1.0.1"
+		"grunt": "^1.0.1",
+		"babel-core": "^6.26.0"
 	},
 	"dependencies": {
 		"babel-preset-es2015": "^6.24.1",
 		"babel-preset-stage-2": "^6.24.1",
+		"babelify": "^8.0.0",
+		"es2015": "0.0.0",
 		"grunt-browserify": "^5.2.0",
 		"grunt-contrib-connect": "^1.0.2",
 		"grunt-contrib-sass": "^1.0.0",
