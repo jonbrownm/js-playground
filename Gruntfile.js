@@ -43,7 +43,7 @@ module.exports = function(grunt){
 					]
 				},
 				files: {
-					'src/js/app.min.js': ['src/js/app.js']
+					'src/js/app.min.js': ['src/js/components/**/*.js']
 				}
 			}
 		},
@@ -55,10 +55,13 @@ module.exports = function(grunt){
 
 		watch: {
 			grunt: { files: ['Gruntfile.js'], tasks: ['default'] },
-
 			sass: {
-				files: 'src/css/**/*.scss',
+				files: 'src/css/components/**/*.scss',
 				tasks: ['sass']
+			},
+			browserify: {
+				files: 'src/js/components/**/*.js',
+				tasks: ['browserify']
 			}
 		},
 
