@@ -22,9 +22,9 @@ module.exports = function(grunt){
 				},
 				files: [{
 					expand: true,
-					cwd: 'src/stylesheets',
+					cwd: 'src/css',
 					src: ['*.scss'],
-					dest: 'src/stylesheets',
+					dest: 'src/css',
 					ext: '.min.css'
 				}]
 			}
@@ -39,7 +39,7 @@ module.exports = function(grunt){
 			grunt: { files: ['Gruntfile.js'], tasks: ['default'] },
 
 			sass: {
-				files: 'src/stylesheets/**/*.scss',
+				files: 'src/css/**/*.scss',
 				tasks: ['sass']
 			}
 		},
