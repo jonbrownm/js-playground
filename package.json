@@ -1,0 +1,10 @@
+{
+	"name": "Init Project",
+	"version": "1.2.0",
+	"author": "Jonathan Brown",
+	"private": true,
+	"devDependencies": {},
+	"dependencies": {
+		"grunt": "^1.0.1"
+	}
+}
