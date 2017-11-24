@@ -3,8 +3,13 @@
 	"version": "1.2.0",
 	"author": "Jonathan Brown",
 	"private": true,
-	"devDependencies": {},
+	"devDependencies": {
+		"grunt-contrib-connect": "^1.0.2",
+		"grunt-contrib-sass": "^1.0.0",
+		"grunt-contrib-watch": "^1.0.0"
+	},
 	"dependencies": {
-		"grunt": "^1.0.1"
+		"grunt": "^1.0.1",
+		"grunt-js-build": "^0.1.3"
 	}
 }
