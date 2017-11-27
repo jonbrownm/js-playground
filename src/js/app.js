@@ -1,5 +1,5 @@
-import {ComponentA} from './components/ComponentA'
-import {ComponentB} from './components/ComponentB'
+import {componentA} from './components/componentA'
+import {componentB} from './components/componentB'
 
-ComponentA();
-ComponentB();
+componentA();
+componentB();
