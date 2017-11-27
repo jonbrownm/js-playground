@@ -1,5 +1,5 @@
-import { A } from './components/a'
-import b from './components/b'
+import { A } from './components/ComponentA'
+import b from './components/ComponentB'
 import fs from 'fs';
 
 A();

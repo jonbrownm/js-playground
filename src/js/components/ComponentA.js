@@ -14,6 +14,6 @@ var f = async function() {
 };
 
 export function A() {
-  console.log('a', a++);
+  console.log("Component A: ", a++);
   f().then(res => console.log(res));
 }
