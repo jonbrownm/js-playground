@@ -1,5 +1,5 @@
 var result = true;
 
-export default function ComponentA() {
+export function ComponentA() {
   console.log('Component A:', result);
 }
