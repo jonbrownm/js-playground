@@ -56,11 +56,11 @@ module.exports = function(grunt){
 		watch: {
 			grunt: { files: ['Gruntfile.js'], tasks: ['default'] },
 			sass: {
-				files: 'src/css/components/**/*.scss',
+				files: 'src/css/**/*.scss',
 				tasks: ['sass']
 			},
 			browserify: {
-				files: 'src/js/components/**/*.js',
+				files: 'src/js/**/*.js',
 				tasks: ['browserify']
 			}
 		},
