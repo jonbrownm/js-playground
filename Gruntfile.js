@@ -43,7 +43,7 @@ module.exports = function(grunt){
 					]
 				},
 				files: {
-					'src/js/app.min.js': ['src/js/components/**/*.js']
+					'src/js/app.min.js': ['src/js/app.js']
 				}
 			}
 		},
