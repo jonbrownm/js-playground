@@ -1,5 +1,7 @@
 module.exports = function(grunt){
 
+	packageName = "<%= pkg.repoSlug %>";
+
 	// -----------------------------------------
 	// Start Grunt configuration
 	// -----------------------------------------
@@ -19,7 +21,8 @@ module.exports = function(grunt){
                 options: {
                     authKey: "grunt-dev",
                     host: "home245620893.1and1-data.host",
-                    dest: "/init-project"
+                    dest: "/" + packageName,
+                    incrementalUpdates: false
                 },
                 files: [{
                     expand: true,
