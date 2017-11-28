@@ -11,6 +11,26 @@ module.exports = function(grunt){
 
 
 		// --------------------------------------
+		// FTP Configuration
+		// --------------------------------------
+
+        ftp_push: {
+            your_target: {
+                options: {
+                    authKey: "grunt-dev",
+                    host: "home245620893.1and1-data.host",
+                    dest: "/init-project"
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'src/',
+                    src: ['**/*']
+                }]
+            }
+        },
+
+
+		// --------------------------------------
 		// Sass Configuration
 		// --------------------------------------
 
@@ -88,6 +108,7 @@ module.exports = function(grunt){
 	// Load Grunt tasks
 	// -----------------------------------------
 
+	grunt.loadNpmTasks('grunt-ftp-push');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-browserify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
@@ -99,5 +120,6 @@ module.exports = function(grunt){
 	// -----------------------------------------
 
 	grunt.registerTask('default',  ['sass','browserify','connect','watch']);
+	grunt.registerTask('prod',  ['sass','browserify','ftp_push']);
 
 };

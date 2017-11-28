@@ -9,8 +9,9 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"devDependencies": {
+		"babel-core": "^6.26.0",
 		"grunt": "^1.0.1",
-		"babel-core": "^6.26.0"
+		"grunt-ftp-push": "^1.2.1"
 	},
 	"dependencies": {
 		"babel-preset-es2015": "^6.24.1",
