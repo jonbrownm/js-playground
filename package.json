@@ -3,7 +3,7 @@
 	"repoSlug": "init-project",
 	"version": "1.2.0",
 	"author": "Jonathan Brown",
-	"description": "",
+	"description": "Basic bootstrap project to build applications with grunt",
 	"private": true,
 	"main": "Gruntfile.js",
 	"scripts": {
