@@ -1,5 +1,4 @@
 ## Overview
-* * *
 
 This repository contains everything for building, running and deploying dev.jonbrownm.com.
 
