@@ -1,5 +1,3 @@
-import {componentA} from './components/componentA'
-import {componentB} from './components/componentB'
+import {genericComponent} from './components/genericComponent';
 
-componentA();
-componentB();
+genericComponent();
