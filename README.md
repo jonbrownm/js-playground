@@ -28,6 +28,10 @@ To deploy this to the current production environment, you can deploy a static in
 This will publish the contents of `dist` to <http://dev.jonbrownm.com>/repoSlug.
 This is defined in the package.json and should be set when the project is replicated.
 
+## Foundation
+
+Foundation (Version 6.4.3) is available in this project. It can be removed if it's not required for the working project. The imported components can be customised as required. The settings file includes tons of variables that can be customized for each component. The full documentation for Foundation can be found at <https://foundation.zurb.com/sites/docs/>.
+
 ## Repository structure
 The following information details the structure of the codebase…
 
