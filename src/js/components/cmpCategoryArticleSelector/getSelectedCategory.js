@@ -14,9 +14,7 @@ export const getSelectedCategory = () => {
 
 			currentSelectedCategory = e.currentTarget.getAttribute('data-category-type');
 
-			console.log(currentSelectedCategory)
-
-			showSelectedCategory();
+			showSelectedCategory(currentSelectedCategory);
 			
 		});
 
