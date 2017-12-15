@@ -1,19 +1,28 @@
 
-var elementArticleItems = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-list-item')),
-	elementArticleItemCategory;
+var elementArticleItems = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-list-item'));
 
 export const showSelectedCategory = (currentSelectedCategory) => {
-	console.log(currentSelectedCategory);
 
 	if (currentSelectedCategory === 'All') {
-		elementArticleItems.forEach(function(elementArticleItem) {
-		    elementArticleItem.style.display = 'block';
-		});
+		return elementArticleItems.map(function(elementArticleItems) {
+			elementArticleItems.style.display = 'block';
+			return elementArticleItems
+		})
 	}
 	else {
-		elementArticleItems.forEach(function(elementArticleItem) {
-		    elementArticleItem.style.display = 'none';
-		});
+		return elementArticleItems.map(function(elementArticleItems) {
+			elementArticleItems.style.display = 'none';
+
+			return elementArticleItems
+		}).filter(function(elementArticleItems){
+
+			return elementArticleItems.getAttribute('data-category-type') === currentSelectedCategory;
+		}).map(function(elementArticleItems){
+
+			elementArticleItems.style.display = 'block';
+			return elementArticleItems;
+		})
+
 	}
 
 }
