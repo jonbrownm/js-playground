@@ -1,7 +1,9 @@
 
+import {showSelectedCategory} from './showSelectedCategory';
+
 export const getSelectedCategory = () => {
 	
-	var elementArticleSelectorItem = document.querySelectorAll('.cmp-generic-component__article-selector-item'),
+	var elementArticleSelectorItem = document.querySelectorAll('.cmp-category-article-selector__article-selector-item'),
 		currentSelectedCategory;
 		
 
@@ -13,6 +15,9 @@ export const getSelectedCategory = () => {
 			currentSelectedCategory = e.currentTarget.getAttribute('data-category-type');
 
 			console.log(currentSelectedCategory)
+
+			showSelectedCategory();
+			
 		});
 
 	}
