@@ -2,6 +2,12 @@
 
 	.cmp-category-article-selector__article-list {
 		list-style: none;
+
+		.cmp-category-article-selector__article-list-item {
+			height: 200px;
+			background: #cdcdcd;
+		}
+
 	}
 
 }
