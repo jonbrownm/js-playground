@@ -1,4 +1,4 @@
 
-export const functionB = () => {
+export const getSelectedCategory = () => {
 	console.log('init functionB');
 }
