@@ -1,6 +1,6 @@
 {
 	"name": "Init Project",
-	"repoSlug": "init-project",
+	"repoSlug": "js-playground",
 	"version": "1.2.0",
 	"author": "Jonathan Brown",
 	"description": "Basic bootstrap project to build applications with grunt",
