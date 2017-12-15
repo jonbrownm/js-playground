@@ -1,4 +1,4 @@
-@import '../../bower_components/foundation-sites/scss/foundation';
+@import '../../node_modules/foundation-sites/scss/foundation';
 
 @include foundation-global-styles;
 // @include foundation-xy-grid-classes;
@@ -13,10 +13,10 @@
 // @include foundation-badge;
 // @include foundation-breadcrumbs;
 // @include foundation-button-group;
-@include foundation-callout;
+// @include foundation-callout;
 // @include foundation-card;
 // @include foundation-close-button;
-// @include foundation-menu;
+@include foundation-menu;
 // @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
 // @include foundation-dropdown;
