@@ -1,3 +1,3 @@
-import {genericComponent} from './components/genericComponent';
+import {cmpCategoryArticleSelector} from './components/cmpCategoryArticleSelector';
 
-genericComponent();
+cmpCategoryArticleSelector();

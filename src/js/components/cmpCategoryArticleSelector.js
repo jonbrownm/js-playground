@@ -2,7 +2,7 @@ import {getSelectedCategory} from './cmpCategoryArticleSelector/getSelectedCateg
 
 const genericComponentElement = document.querySelector("[data-component-name='cmpCategoryArticleSelector']");
 
-export const genericComponent = () => {
+export const cmpCategoryArticleSelector = () => {
 
 	getSelectedCategory();
 	
