@@ -5,9 +5,9 @@ export const showAllSelectedCategory = (currentViewArticleList, allArticles) => 
 		currentViewArticleList.forEach(function(article, i){
 			article.style.display = "block";
 		})
-		if (currentViewArticleList.length > 6) {
-			filterLoad.style.display = "none";
-		}
+		// if (currentViewArticleList.length > 6) {
+		// 	filterLoad.style.display = "none";
+		// }
 	}
 	else if (!allArticles) {
 		currentViewArticleList.forEach(function(article, i){
@@ -15,9 +15,9 @@ export const showAllSelectedCategory = (currentViewArticleList, allArticles) => 
 				article.style.display = "none";
 			}
 		})
-		if (currentViewArticleList.length > 6) {
-			filterLoad.style.display = "block";
-		}
+		// if (currentViewArticleList.length > 6) {
+		// 	filterLoad.style.display = "block";
+		// }
 	}
 
 }
