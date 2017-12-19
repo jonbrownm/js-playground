@@ -1,11 +1,11 @@
 import {getSelectedCategory} from './cmpCategoryArticleSelector/getSelectedCategory';
-import {showAllSelectedCategory} from './cmpCategoryArticleSelector/showAllSelectedCategory';
+import {getAllSelectedCategory} from './cmpCategoryArticleSelector/getAllSelectedCategory';
 
 const genericComponentElement = document.querySelector("[data-component-name='cmpCategoryArticleSelector']");
 
 export const cmpCategoryArticleSelector = () => {
 
 	getSelectedCategory();
-	showAllSelectedCategory();
+	getAllSelectedCategory();
 	
 }
