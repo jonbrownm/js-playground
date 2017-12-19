@@ -6,7 +6,7 @@ const genericComponentElement = document.querySelector("[data-component-name='cm
 
 var elementArticleSelectorItem = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-selector-item')),
 	elementArticleItems = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-list-item')),
-	currentViewArticleList = elementArticleSelectorItem,
+	currentViewArticleList = elementArticleItems,
 	allArticles = false,
 	elementArticleItems;
 	
