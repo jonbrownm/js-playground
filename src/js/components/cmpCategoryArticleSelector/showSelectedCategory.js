@@ -1,7 +1,5 @@
 
-var elementArticleItems = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-list-item'));
-
-export const showSelectedCategory = (currentSelectedCategory) => {
+export const showSelectedCategory = (currentSelectedCategory, elementArticleItems) => {
 
 	if (currentSelectedCategory === 'All') {
 		return elementArticleItems.map(function(elementArticleItems) {
