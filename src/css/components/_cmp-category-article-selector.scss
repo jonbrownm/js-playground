@@ -4,8 +4,33 @@
 		list-style: none;
 
 		.cmp-category-article-selector__article-list-item {
-			height: 200px;
-			background: $light-gray;
+
+			.cmp-category-article-selector__article-list-item-content {
+				height: 200px;
+				padding: 2rem;
+				background: $light-gray;
+
+				&.is-animals-category {
+					background: #666666;
+				}
+
+				&.is-cars-category {
+					background: #999999;
+
+				}
+
+				&.is-sports-category {
+					background: #CDCDCD;
+
+				}
+
+				&.is-technology-category {
+					background: #333333;
+
+				}
+
+			}
+
 		}
 
 	}
