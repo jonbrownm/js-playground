@@ -1,16 +1,20 @@
 import {getSelectedCategory} from './cmpCategoryArticleSelector/getSelectedCategory';
 import {getAllSelectedCategory} from './cmpCategoryArticleSelector/getAllSelectedCategory';
+import {showAllSelectedCategory} from './cmpCategoryArticleSelector/showAllSelectedCategory';
 
 const genericComponentElement = document.querySelector("[data-component-name='cmpCategoryArticleSelector']");
 
 var elementArticleSelectorItem = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-selector-item')),
 	elementArticleItems = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-list-item')),
 	currentViewArticleList = elementArticleSelectorItem,
+	allArticles = false,
 	elementArticleItems;
+	
 
 export const cmpCategoryArticleSelector = () => {
 
 	getSelectedCategory(elementArticleSelectorItem, elementArticleItems);
-	getAllSelectedCategory(elementArticleSelectorItem, currentViewArticleList, elementArticleItems);
+	getAllSelectedCategory(elementArticleSelectorItem, currentViewArticleList, elementArticleItems, allArticles);
+	showAllSelectedCategory(currentViewArticleList, allArticles);
 	
 }
