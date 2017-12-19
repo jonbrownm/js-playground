@@ -1,7 +1,7 @@
 
 
-export const showAllSelectedCategory = () => {
+export const showAllSelectedCategory = (currentViewArticleList) => {
 	
-	console.log("hello")
+	console.log(currentViewArticleList)
 
 }
