@@ -4,10 +4,10 @@ import {showAllSelectedCategory} from './cmpCategoryArticleSelector/showAllSelec
 
 const genericComponentElement = document.querySelector("[data-component-name='cmpCategoryArticleSelector']");
 
-var elementArticleSelectorItem = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-selector-item')),
+var allArticles = false,
+	elementArticleSelectorItem = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-selector-item')),
 	elementArticleItems = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-list-item')),
 	currentViewArticleList = elementArticleItems,
-	allArticles = false,
 	elementArticleItems;
 	
 
