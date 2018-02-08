@@ -1,5 +1,5 @@
 
-export const showInProgressChat = (elementChatInput) => {
+export const showBotInProgressChat = (elementChatInput) => {
 
 	var isTypingElement = document.querySelector("[data-is-chatting]");
 
@@ -8,6 +8,6 @@ export const showInProgressChat = (elementChatInput) => {
 
 	setTimeout(function(){
 		isTypingElement.style.opacity = "0";
-	}, 1000);
+	}, 2500);
 
 }

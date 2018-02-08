@@ -1,5 +1,5 @@
 
-import {showInProgressChat} from './showInProgressChat';
+import {showBotInProgressChat} from './showBotInProgressChat';
 
 export const showBotSubmittedChat = (chatResponse) => {
 
@@ -16,13 +16,10 @@ export const showBotSubmittedChat = (chatResponse) => {
 
     newChatListItem.appendChild(newChatListSpan);
 
+    showBotInProgressChat();
+
     setTimeout(function(){
-        showInProgressChat();
-
-        setTimeout(function(){
-           chatList.appendChild(newChatListItem);
-        }, 1500);
-
-    }, 1500);
+        chatList.appendChild(newChatListItem);
+    }, 3000);
 
 }
