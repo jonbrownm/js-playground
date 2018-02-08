@@ -16,11 +16,12 @@
 			}
 
 			.cmp-chat-interface__dialogue-list-item-chat {
+				font-size: .9rem;
 				text-align: left;
-				padding: .8rem 1rem;
+				padding: .4rem .8rem;
 				display: inline-block;
 				background: $light-gray;
-				border-radius: 26.295px;
+				border-radius: 18.89px;
 				border: solid 1px $light-gray;
 
 			}
@@ -34,8 +35,9 @@
 		resize: none;
 		outline: none;
 		height: 77.59px;
-		padding: .8rem 1rem;
-		border-radius: 26.295px;
+		font-size: .9rem;
+		padding: .4rem .8rem;
+		border-radius: 18.89px;
 		border: solid 1px $light-gray;
 	}
 
