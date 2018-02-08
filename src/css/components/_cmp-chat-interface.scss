@@ -9,10 +9,20 @@
 
 			&.is-user {
 				text-align: left;
+
+				span {
+					background: $light-gray;
+				}
+			
 			}
 
 			&.is-bot {
 				text-align: right;
+
+				span {
+					background: $light-gray;
+				}
+			
 			}
 
 			.cmp-chat-interface__dialogue-list-item-chat {
@@ -20,12 +30,26 @@
 				text-align: left;
 				padding: .4rem .8rem;
 				display: inline-block;
-				background: $light-gray;
 				border-radius: 18.89px;
 				border: solid 1px $light-gray;
 
 			}
 
+		}
+
+	}
+
+	.cmp-chat-interface__message-typing {
+		opacity: 0;
+		display: block;
+		margin-bottom: .5rem;
+
+		span {
+			display: inline-block;
+			padding: .4rem .8rem;
+			background: $light-gray;
+			border-radius: 18.89px;
+			border: solid 1px $light-gray;
 		}
 
 	}

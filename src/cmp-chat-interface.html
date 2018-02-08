@@ -15,7 +15,7 @@
 		<div class="cmp-chat-interface" data-component-name="cmpChatInterface">
 			<div class="row">
 				<div class="columns small-12 medium-8 medium-offset-2">
-					<ul class="cmp-chat-interface__dialogue-list" data-chat-list id="list">
+					<ul class="cmp-chat-interface__dialogue-list" data-chat-list>
 						<li class="cmp-chat-interface__dialogue-list-item is-bot">
 							<span class="cmp-chat-interface__dialogue-list-item-chat">Hello?</span>
 						</li>
@@ -24,8 +24,14 @@
 			</div>
 			<div class="row">
 				<div class="columns small-12 medium-8 medium-offset-2">
+					<div class="cmp-chat-interface__message-typing" data-is-chatting>
+						<span>.........</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="columns small-12 medium-8 medium-offset-2">
 					<textarea name="textarea" class="cmp-chat-interface__message-input" rows="1" cols="1" data-new-chat></textarea>
-					<small class="is-typing"></small>
 				</div>
 			</div>
 		</div>
