@@ -3,12 +3,12 @@ import {showSubmittedChat} from './showSubmittedChat';
 
 export const getSubmittedChat = (elementSubmitButton) => {
 
-	elementSubmitButton.addEventListener('click', function(e) {
-		e.preventDefault();
+	elementSubmitButton.addEventListener('keyup', function (e) {
 
-		var submittedChat = document.querySelector("[data-new-chat]").value;
-
-		showSubmittedChat(submittedChat);
+	    if (e.keyCode === 13) {
+	        var submittedChat = document.querySelector("[data-new-chat]").value;
+	        showSubmittedChat(submittedChat);
+	    }
 
 	});
 

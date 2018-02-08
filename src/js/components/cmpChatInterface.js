@@ -5,7 +5,7 @@ const componentChatInterface = document.querySelector("[data-component-name='cmp
 
 export const cmpChatInterface = () => {
 
-	var elementSubmitButton = document.querySelector("input[data-submit-chat]");
+	var elementSubmitButton = document.querySelector("textarea");
 
 	if (componentChatInterface) {
 		getSubmittedChat(elementSubmitButton);
