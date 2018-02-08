@@ -1,10 +1,14 @@
 
 export const showInProgressChat = (elementChatInput) => {
 
-    elementChatInput.addEventListener('keyup', function (e) {
+	var isTypingElement = document.querySelector(".is-typing"),
+		isCurrentlyTyping;
 
-        console.log("Chat is in progress")
 
+	elementChatInput.addEventListener('keyup', function (e) {
+
+		isTypingElement.innerHTML = "Is typing";
+		
     });
 
 }
