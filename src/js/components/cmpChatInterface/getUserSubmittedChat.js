@@ -11,8 +11,8 @@ export const getUserSubmittedChat = (elementChatInput) => {
 	    		submittedChatMessage = document.querySelector("[data-chat-interface='user-chat']").value;
 
 
-	        submittedChat.value = "";
-	        showUserSubmittedChat(submittedChatMessage);
+		    submittedChat.value = "";
+		    showUserSubmittedChat(submittedChatMessage);
 	        
 	    }
 
