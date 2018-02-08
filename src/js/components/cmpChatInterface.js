@@ -1,5 +1,5 @@
 
-import {getSubmittedChat} from './cmpChatInterface/getSubmittedChat';
+import {getUserSubmittedChat} from './cmpChatInterface/getUserSubmittedChat';
 
 const componentChatInterface = document.querySelector("[data-component-name='cmpChatInterface']"),
 	  elementChatInput = document.querySelector("textarea");
@@ -8,7 +8,7 @@ const componentChatInterface = document.querySelector("[data-component-name='cmp
 export const cmpChatInterface = () => {
 
 	if (componentChatInterface) {
-		getSubmittedChat(elementChatInput);
+		getUserSubmittedChat(elementChatInput);
 	}
 	
 }

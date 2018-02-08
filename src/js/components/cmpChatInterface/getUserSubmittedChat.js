@@ -1,7 +1,7 @@
 
-import {showSubmittedChat} from './showSubmittedChat';
+import {showUserSubmittedChat} from './showUserSubmittedChat';
 
-export const getSubmittedChat = (elementChatInput) => {
+export const getUserSubmittedChat = (elementChatInput) => {
 
 	elementChatInput.addEventListener('keyup', function (e) {
 
@@ -12,7 +12,7 @@ export const getSubmittedChat = (elementChatInput) => {
 
 
 	        submittedChat.value = "";
-	        showSubmittedChat(submittedChatMessage);
+	        showUserSubmittedChat(submittedChatMessage);
 	        
 	    }
 

@@ -1,7 +1,7 @@
 
-import {showBotChat} from './showBotChat';
+import {getBotSubmittedChat} from './getBotSubmittedChat';
 
-export const showSubmittedChat = (submittedChat) => {
+export const showUserSubmittedChat = (submittedChat) => {
 
 	var chatList = document.querySelector("[data-chat-list]"),
         isTypingElement = document.querySelector("[data-is-chatting]"),
@@ -19,6 +19,6 @@ export const showSubmittedChat = (submittedChat) => {
     newChatListItem.appendChild(newChatListSpan);
     chatList.appendChild(newChatListItem);
 
-    showBotChat();
+    getBotSubmittedChat();
 
 }
