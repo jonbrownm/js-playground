@@ -1,0 +1,42 @@
+.cmp-chat-interface {
+
+	.cmp-chat-interface__dialogue-list {
+		list-style: none;
+		margin-left: 0;
+
+		.cmp-chat-interface__dialogue-list-item {
+			margin-bottom: .5rem;
+
+			&.is-user {
+				text-align: left;
+			}
+
+			&.is-bot {
+				text-align: right;
+			}
+
+			.cmp-chat-interface__dialogue-list-item-chat {
+				text-align: left;
+				padding: .6rem 1rem;
+				display: inline-block;
+				background: $light-gray;
+				border-radius: 20.5px;
+				border: solid 1px $light-gray;
+
+			}
+
+		}
+
+	}
+
+	.cmp-chat-interface__message-input {
+		width: 100%;
+		resize: none;
+		outline: none;
+		height: 71.19px;
+		padding: .6rem 1rem;
+		border-radius: 20.5px;
+		border: solid 1px $light-gray;
+	}
+
+}
