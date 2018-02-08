@@ -42,12 +42,13 @@
 	.cmp-chat-interface__message-typing {
 		opacity: 0;
 		display: block;
-		margin-bottom: .5rem;
+		text-align: right;
+		margin-bottom: 1rem;
+		transition: opacity .5s linear;
 
 		span {
 			display: inline-block;
 			padding: .4rem .8rem;
-			background: $light-gray;
 			border-radius: 18.89px;
 			border: solid 1px $light-gray;
 		}

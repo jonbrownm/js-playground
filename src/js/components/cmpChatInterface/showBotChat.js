@@ -1,4 +1,6 @@
 
+import {showInProgressChat} from './showInProgressChat';
+
 export const showBotChat = () => {
 
 	var chatList = document.querySelector("[data-chat-list]"),
@@ -21,7 +23,12 @@ export const showBotChat = () => {
     newChatListItem.appendChild(newChatListSpan);
 
     setTimeout(function(){
-    	chatList.appendChild(newChatListItem);
+        showInProgressChat();
+
+        setTimeout(function(){
+    	   chatList.appendChild(newChatListItem);
+        }, 1500);
+
     }, 1500);
 
 }
