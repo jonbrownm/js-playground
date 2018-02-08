@@ -14,6 +14,8 @@ export const showBotChat = () => {
 
     newChatListItem.appendChild(newChatListSpan);
 
-    chatList.appendChild(newChatListItem);
+    setTimeout(function(){
+    	chatList.appendChild(newChatListItem);
+    }, 1500);
 
 }
