@@ -1,7 +1,7 @@
 
 export const showBotInProgressChat = (elementChatInput) => {
 
-	var isTypingElement = document.querySelector("[data-is-chatting]");
+	var isTypingElement = document.querySelector("[data-chat-interface='bot-chatting']");
 
 
 	isTypingElement.style.opacity = "1";

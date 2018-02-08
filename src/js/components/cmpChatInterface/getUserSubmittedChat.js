@@ -7,8 +7,8 @@ export const getUserSubmittedChat = (elementChatInput) => {
 
 	    if (e.keyCode === 13) {
 
-	    	var submittedChat = document.querySelector("[data-new-chat]"),
-	    		submittedChatMessage = document.querySelector("[data-new-chat]").value;
+	    	var submittedChat = document.querySelector("[data-chat-interface='user-chat']"),
+	    		submittedChatMessage = document.querySelector("[data-chat-interface='user-chat']").value;
 
 
 	        submittedChat.value = "";

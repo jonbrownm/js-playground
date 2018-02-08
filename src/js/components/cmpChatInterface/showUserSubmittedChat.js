@@ -3,8 +3,8 @@ import {getBotSubmittedChat} from './getBotSubmittedChat';
 
 export const showUserSubmittedChat = (submittedChat) => {
 
-	var chatList = document.querySelector("[data-chat-list]"),
-        isTypingElement = document.querySelector("[data-is-chatting]"),
+	var chatList = document.querySelector("[data-chat-interface='dialogue']"),
+        isTypingElement = document.querySelector("[data-chat-interface='bot-chatting']"),
 		newChatListItem = document.createElement("li"),
 		newChatListSpan = document.createElement("span");
 

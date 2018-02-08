@@ -3,7 +3,7 @@ import {showBotInProgressChat} from './showBotInProgressChat';
 
 export const showBotSubmittedChat = (chatResponse) => {
 
-    var chatList = document.querySelector("[data-chat-list]"),
+    var chatList = document.querySelector("[data-chat-interface='dialogue']"),
         newChatListItem = document.createElement("li"),
         newChatListSpan = document.createElement("span");
 

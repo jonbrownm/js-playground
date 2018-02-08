@@ -7,15 +7,10 @@
 		<link rel="stylesheet" href="css/app.min.css">
 	</head>
 	<body>
-		<div class="callout large primary">
-			<div class="row column text-center">
-				<h1>Init project</h1>
-			</div>
-		</div>
 		<div class="cmp-chat-interface" data-component-name="cmpChatInterface">
 			<div class="row">
 				<div class="columns small-12 medium-8 medium-offset-2">
-					<ul class="cmp-chat-interface__dialogue-list" data-chat-list>
+					<ul class="cmp-chat-interface__dialogue-list" data-chat-interface="dialogue">
 						<li class="cmp-chat-interface__dialogue-list-item is-bot">
 							<span class="cmp-chat-interface__dialogue-list-item-chat">Hello?</span>
 						</li>
@@ -24,14 +19,14 @@
 			</div>
 			<div class="row">
 				<div class="columns small-12 medium-8 medium-offset-2">
-					<div class="cmp-chat-interface__message-typing" data-is-chatting>
+					<div class="cmp-chat-interface__message-typing" data-chat-interface="bot-chatting">
 						<span>Bot is typing ...</span>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="columns small-12 medium-8 medium-offset-2">
-					<textarea name="textarea" class="cmp-chat-interface__message-input" rows="1" cols="1" data-new-chat></textarea>
+					<textarea name="textarea" class="cmp-chat-interface__message-input" rows="1" cols="1" data-chat-interface="user-chat"></textarea>
 				</div>
 			</div>
 		</div>
