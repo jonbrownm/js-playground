@@ -1,9 +1,9 @@
 
 import {showSubmittedChat} from './showSubmittedChat';
 
-export const getSubmittedChat = (elementSubmitButton) => {
+export const getSubmittedChat = (elementChatInput) => {
 
-	elementSubmitButton.addEventListener('keyup', function (e) {
+	elementChatInput.addEventListener('keyup', function (e) {
 
 	    if (e.keyCode === 13) {
 
