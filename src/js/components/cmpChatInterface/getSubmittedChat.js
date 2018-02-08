@@ -1,6 +1,9 @@
 
-export const getSubmittedChat = () => {
+export const getSubmittedChat = (elementSubmitButton) => {
 
-	console.log("get Submitted Chat")	
+	elementSubmitButton.addEventListener('click', function(e) {
+		e.preventDefault();
+		console.log("hello")
+	});
 
 }
