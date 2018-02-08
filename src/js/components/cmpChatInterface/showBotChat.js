@@ -1,7 +1,5 @@
 
-import {showBotChat} from './showBotChat';
-
-export const showSubmittedChat = (submittedChat) => {
+export const showBotChat = () => {
 
 	var chatList = document.querySelector("[data-chat-list]"),
 		newChatListItem = document.createElement("li"),
@@ -9,13 +7,13 @@ export const showSubmittedChat = (submittedChat) => {
 
 
     newChatListItem.classList.add("cmp-chat-interface__dialogue-list-item");
-    newChatListItem.classList.add("is-user");
+    newChatListItem.classList.add("is-bot");
     newChatListSpan.classList.add("cmp-chat-interface__dialogue-list-item-chat");
     
-    newChatListSpan.innerText = submittedChat;
-    newChatListItem.appendChild(newChatListSpan);
-    chatList.appendChild(newChatListItem);
+    newChatListSpan.innerText = "What?";
 
-    showBotChat();
+    newChatListItem.appendChild(newChatListSpan);
+
+    chatList.appendChild(newChatListItem);
 
 }
