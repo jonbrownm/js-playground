@@ -1,13 +1,14 @@
 
+import {showSubmittedChat} from './showSubmittedChat';
+
 export const getSubmittedChat = (elementSubmitButton) => {
 
 	elementSubmitButton.addEventListener('click', function(e) {
 		e.preventDefault();
 
-		var submittedMessage = document.querySelector("[data-submitted-message]").value;
+		var submittedChat = document.querySelector("[data-new-chat]").value;
 
-
-		console.log(submittedMessage)
+		showSubmittedChat(submittedChat);
 
 	});
 
