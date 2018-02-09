@@ -22,4 +22,17 @@ export const showBotSubmittedChat = (chatResponse) => {
         chatList.appendChild(newChatListItem);
     }, 3000);
 
+
+
+
+    // var dataArray = JSON.parse(JSON.stringify(data));
+
+    // dataArray.map(function(owner){
+    //    console.log(owner.surname);
+    //    console.log(owner.pets[0].name);
+    //    console.log(owner.pets[0].type);
+    // });
+
+
+
 }
