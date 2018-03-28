@@ -9,6 +9,11 @@
 		padding: 1rem;
 		border-radius: $global-radius;
 		border: solid 1px $light-gray;
+
+		&:focus {
+			box-shadow: 0 0 0 0.2rem rgba(230,230,230,.25);
+		}
+
 	}
 
 	.cmp-country-search__results {
@@ -38,7 +43,7 @@
 		}
 
 		&:hover {
-			background: #cdcdcd;
+			background: rgba(230,230,230,.25);
 		}
 
 	}

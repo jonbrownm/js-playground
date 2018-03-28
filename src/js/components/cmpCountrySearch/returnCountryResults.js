@@ -6,7 +6,8 @@ export const returnCountryResults = (countryList, userSearchInput) => {
 	var elementSearchList = document.querySelector("[data-component-name='cmpCountrySearch'] ul"),
 		searchResultsDisplayed = 5,
 		searchResultsDisplayedCurrent,
-		currentCountry,
+		currentCountryToSearch,
+		currentCountryToDisplay,
 		index;
 
 
@@ -17,12 +18,12 @@ export const returnCountryResults = (countryList, userSearchInput) => {
 
 			var newListItem = document.createElement("li");
 			
+			currentCountryToSearch = countryList[index].toLowerCase();
+			currentCountryToDisplay = countryList[index];
 
-			currentCountry = countryList[index].toLowerCase();
-
-			if (currentCountry.match("^" + userSearchInput)) {
+			if (currentCountryToSearch.match("^" + userSearchInput)) {
 				newListItem.className = "cmp-country-search__results-item";
-				newListItem.appendChild(document.createTextNode(currentCountry));
+				newListItem.appendChild(document.createTextNode(currentCountryToDisplay));
 				elementSearchList.appendChild(newListItem);
 				searchResultsDisplayedCurrent = elementSearchList.childElementCount; 
 			}
