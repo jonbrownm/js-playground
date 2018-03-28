@@ -19,27 +19,29 @@
 	.cmp-country-search__results {
 		width: 70%;
 		outline: 0;
-		display: block;
+		display: none;
 		margin: 0 auto;
 		list-style: none;
 		margin-top: .5rem;
-
+		overflow-y: scroll;
+		max-height: 349px;
+		border-top: solid 1px $light-gray;
+		border-bottom: solid 1px $light-gray;
+		border-radius: $global-radius 0 0 $global-radius;
 	}
 
 	.cmp-country-search__results-item {
 		padding: 1rem;
 		cursor: pointer;
-		border-top: solid 1px $light-gray;
-		border-right: solid 1px $light-gray;
+		border-bottom: solid 1px $light-gray;
 		border-left: solid 1px $light-gray;
 
-		&:first-child {
-			border-radius: $global-radius $global-radius 0 0;
+		&:last-child {
+			border-top: 0;
 		}
 
 		&:last-child {
-			border-bottom: solid 1px $light-gray;
-			border-radius: 0 0 $global-radius $global-radius;
+			border-bottom: 0;
 		}
 
 		&:hover {
