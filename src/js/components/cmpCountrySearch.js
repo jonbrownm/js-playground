@@ -1,5 +1,6 @@
 import {getUserInput} from './cmpCountrySearch/getUserInput';
 import {returnCountryList} from './cmpCountrySearch/returnCountryList';
+import {setUserInput} from './cmpCountrySearch/setUserInput';
 
 const componentCountrySearch = document.querySelector("[data-component-name='cmpCountrySearch']");
 
@@ -21,11 +22,7 @@ export const cmpCountrySearch = () => {
 	});
 
 	elementSearchList.addEventListener("click", function(element) {
-		if (element.target && element.target.matches("li.cmp-country-search__results-item")) {
-			userSelectedInput = element.target.innerText;
-			elementSearchInput.value = userSelectedInput;
-			elementSearchList.style.display = "none";
-		}
+		setUserInput(elementSearchInput, elementSearchList, userSelectedInput, element);
 	});
 
 }

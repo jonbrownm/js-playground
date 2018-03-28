@@ -26,6 +26,7 @@ export const returnCountryResults = (countryList, userSearchInput) => {
 				newListItem.appendChild(document.createTextNode(currentCountryToDisplay));
 				elementSearchList.appendChild(newListItem);
 			}
+			
 		}
 
 	}
