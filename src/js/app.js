@@ -1,5 +1,5 @@
 import {cmpCategoryArticleSelector} from './components/cmpCategoryArticleSelector';
-import {cmpChatInterface} from './components/cmpChatInterface';
+import {cmpCountrySearch} from './components/cmpCountrySearch';
 
 cmpCategoryArticleSelector();
-cmpChatInterface();
+cmpCountrySearch();
