@@ -6,7 +6,7 @@ export const getUserInput = (elementSearchInput) => {
 	var userSearchInput;
 
 
-	userSearchInput = elementSearchInput.value;
+	userSearchInput = elementSearchInput.value.toLowerCase();
 	return userSearchInput;
 
 }

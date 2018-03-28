@@ -1,7 +1,8 @@
 
-// import
+import {returnCountryResults} from './returnCountryResults';
 
-export const returnCountryList = () => {
+
+export const returnCountryList = (userSearchInput) => {
 	
 	var request = new XMLHttpRequest();
 	request.open('GET', 'js/api/countries.json', true);
@@ -9,7 +10,8 @@ export const returnCountryList = () => {
 	request.onload = function() {
 	  if (request.status >= 200 && request.status < 400) {
 	    // Success!
-	    var data = JSON.parse(request.responseText);
+	    var countryList = JSON.parse(request.responseText);
+	    returnCountryResults(countryList, userSearchInput);
 	  } else {
 	    // We reached our target server, but it returned an error
 

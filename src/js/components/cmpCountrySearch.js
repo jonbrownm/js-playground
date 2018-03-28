@@ -11,11 +11,7 @@ export const cmpCountrySearch = () => {
 
 	elementSearchInput.addEventListener('keyup', function() {
 		
-		console.log(getUserInput(elementSearchInput));
-
-
-		returnCountryList();
-
+		returnCountryList(getUserInput(elementSearchInput));
 
 	});
 	
