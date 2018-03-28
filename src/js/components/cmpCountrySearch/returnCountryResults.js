@@ -12,6 +12,7 @@ export const returnCountryResults = (countryList, userSearchInput) => {
 
 	if (userSearchInput) {
 		elementSearchList.innerHTML = "";
+		elementSearchList.style.display = "block";
 
 		for (index = 0; index < countryList.length; index++) {
 
@@ -30,6 +31,7 @@ export const returnCountryResults = (countryList, userSearchInput) => {
 	}
 	else {
 		elementSearchList.innerHTML = "";
+		elementSearchList.style.display = "none";
 	}
 
 }
