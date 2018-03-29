@@ -58,3 +58,9 @@ The following information details the structure of the codebase…
 ├─ package.json       # Project manifest
 └─ README.md          # This file
 ```
+
+## Components
+To following components can be found in this repository:
+
+* <http://dev.jonbrownm.com/js-playground/category-article-selector.html>
+* <http://dev.jonbrownm.com/js-playground/country-search.html>
