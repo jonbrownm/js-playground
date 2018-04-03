@@ -7,16 +7,20 @@ const componentCategoryArticleSelector = document.querySelector("[data-component
 
 export const cmpCategoryArticleSelector = () => {
 
-	var elementArticleSelectorItem = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-selector-item')),
-		elementArticleItems = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-list-item')),
-		currentViewArticleList = elementArticleItems,
-		elementArticleItems;
 
-
+	// only fire for `cmpCategoryArticleSelector`
 	if (componentCategoryArticleSelector) {
+
+		var elementArticleSelectorItem = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-selector-item')),
+			elementArticleItems = [].slice.call(document.querySelectorAll('.cmp-category-article-selector__article-list-item')),
+			currentViewArticleList = elementArticleItems,
+			elementArticleItems;
+
+
 		getSelectedCategory(elementArticleSelectorItem, elementArticleItems);
 		getAllSelectedCategory(elementArticleSelectorItem, currentViewArticleList, elementArticleItems);
 		showAllSelectedCategory(currentViewArticleList);
+	
 	}
 	
 }
