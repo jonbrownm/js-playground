@@ -1,3 +1,4 @@
+import {showAllCategory} from './cmpCardSelector/showAllCategory';
 import {getUserInput} from './cmpCardSelector/getUserInput';
 import {showSelectedCategory} from './cmpCardSelector/showSelectedCategory';
 
@@ -14,6 +15,7 @@ export const cmpCardSelector = () => {
 
 
 		elementSelectInput.addEventListener("change", function() {
+			showAllCategory();
 			getUserInput(elementSelectInput);
 			showSelectedCategory();
 		});
