@@ -1,6 +1,5 @@
-// import {getUserInput} from './cmpCountrySearch/getUserInput';
-// import {returnCountryList} from './cmpCountrySearch/returnCountryList';
-// import {setUserInput} from './cmpCountrySearch/setUserInput';
+import {getUserInput} from './cmpCardSelector/getUserInput';
+import {showSelectedCategory} from './cmpCardSelector/showSelectedCategory';
 
 const componentCardSelector = document.querySelector("[data-component-name='cmpCardSelector']");
 
@@ -14,8 +13,9 @@ export const cmpCardSelector = () => {
 		var elementSelectInput = document.querySelector("[data-component-name='cmpCardSelector'] select");
 
 
-		elementSelectInput.addEventListener("click", function() {
-			console.log("element changed")
+		elementSelectInput.addEventListener("change", function() {
+			getUserInput(elementSelectInput);
+			showSelectedCategory();
 		});
 
 	}
