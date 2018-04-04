@@ -1,5 +1,5 @@
 
-export const showSelectedCategory = () => {
+export const showSelectedCategory = (getUserInput) => {
 
 	var elementCardsListItem = document.querySelectorAll("[data-component-name='cmpCardSelector'] ul li"),
 		elementCardsListItemCategory;
@@ -9,7 +9,7 @@ export const showSelectedCategory = () => {
 
 		elementCardsListItemCategory = element.getAttribute("data-category");
 
-		if (elementCardsListItemCategory == "red") {
+		if (elementCardsListItemCategory == getUserInput) {
 			element.style.display = "block";
 		}
 		else {

@@ -16,8 +16,7 @@ export const cmpCardSelector = () => {
 
 		elementSelectInput.addEventListener("change", function() {
 			showAllCategory();
-			getUserInput(elementSelectInput);
-			showSelectedCategory();
+			showSelectedCategory(getUserInput(elementSelectInput));
 		});
 
 	}

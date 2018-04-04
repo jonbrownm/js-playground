@@ -5,7 +5,6 @@ export const getUserInput = (elementSelectInput) => {
 
 
 	selectedGroup = elementSelectInput.value;
-	console.log(selectedGroup);
 	return selectedGroup;
 
 }
