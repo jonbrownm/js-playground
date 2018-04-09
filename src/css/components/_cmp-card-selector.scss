@@ -1,6 +1,14 @@
 .cmp-card-selector {
 	margin-top: 3rem;
 
+	.cmp-card-selector__input {
+		outline: 0;
+		height: 59px;
+		cursor: pointer;
+		border: solid 1px $light-gray;
+		border-radius: $global-radius;
+	}
+
 	.cmp-card__cards {
 		margin: 0;
 		list-style: none;
