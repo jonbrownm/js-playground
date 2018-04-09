@@ -62,5 +62,6 @@ The following information details the structure of the codebase…
 ## Components
 To following components can be found in this repository:
 
+* <http://dev.jonbrownm.com/js-playground/card-selector.html>
 * <http://dev.jonbrownm.com/js-playground/category-article-selector.html>
 * <http://dev.jonbrownm.com/js-playground/country-search.html>
