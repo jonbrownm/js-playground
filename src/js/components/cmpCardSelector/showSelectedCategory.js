@@ -1,3 +1,4 @@
+import {showAllCategory} from './showAllCategory';
 
 export const showSelectedCategory = (getUserInput) => {
 
@@ -9,11 +10,16 @@ export const showSelectedCategory = (getUserInput) => {
 
 		elementCardsListItemCategory = element.getAttribute("data-category");
 
-		if (elementCardsListItemCategory == getUserInput) {
-			element.style.display = "block";
+		if (getUserInput != "all") {
+			if (elementCardsListItemCategory == getUserInput) {
+				element.style.display = "block";
+			}
+			else {
+				element.style.display = "none";			
+			}
 		}
 		else {
-			element.style.display = "none";			
+			showAllCategory();
 		}
 
 	});
