@@ -1,5 +1,5 @@
 
-// import {returnCountryResults} from './returnCountryResults';
+import {setupRig} from './setupRig';
 
 
 export const setupRigPanel = (elementCanvas, elementRigPanel) => {
@@ -12,5 +12,7 @@ export const setupRigPanel = (elementCanvas, elementRigPanel) => {
 		panel.style.height = elementCanvasHeight + "px";
 		panel.style.width = elementCanvasWidth + "px";
 	})
+
+	setupRig(elementCanvas, elementRigPanel);
 
 }

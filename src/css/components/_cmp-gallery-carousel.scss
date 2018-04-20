@@ -13,7 +13,8 @@
 			list-style: none;
 
 			.cmp-gallery-carousel_rig-panel {
-				display: inline-block;
+				float: left;
+				display: block;
 				background: $light-gray;
 			}
 
