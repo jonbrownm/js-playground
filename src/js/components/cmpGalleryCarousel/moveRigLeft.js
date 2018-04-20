@@ -2,6 +2,9 @@
 
 export const moveRigLeft = (elementRig, elementCanvasWidth) => {
 
-    elementRig.style.left = "+" + elementCanvasWidth + "px";    
+    var elementRigPosition = parseInt(elementRig.style.left, 10);
+
+    
+    elementRig.style.left = (elementRigPosition + elementCanvasWidth) + "px";  
 
 }
