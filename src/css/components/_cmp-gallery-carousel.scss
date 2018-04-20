@@ -9,7 +9,7 @@
 
 		.cmp-gallery-carousel_rig {
 			margin: 0;
-			width: 10000px;
+			//width: 10000px;
 			list-style: none;
 
 			.cmp-gallery-carousel_rig-panel {
@@ -20,6 +20,14 @@
 
 		}
 
+	}
+
+	.cmp-gallery-carousel_action-left {
+		float: left;
+	}
+
+	.cmp-gallery-carousel_action-right {
+		float: right;
 	}
 
 }

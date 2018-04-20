@@ -2,7 +2,7 @@
 import {setupRig} from './setupRig';
 
 
-export const setupRigPanel = (elementCanvas, elementRigPanel) => {
+export const setupRigPanel = (elementCanvas, elementRig, elementRigPanel) => {
 
 	var elementCanvasHeight = elementCanvas.offsetHeight,
 		elementCanvasWidth = elementCanvas.offsetWidth;
@@ -13,6 +13,6 @@ export const setupRigPanel = (elementCanvas, elementRigPanel) => {
 		panel.style.width = elementCanvasWidth + "px";
 	})
 
-	setupRig(elementCanvas, elementRigPanel);
+	setupRig(elementCanvas, elementRig, elementRigPanel);
 
 }
