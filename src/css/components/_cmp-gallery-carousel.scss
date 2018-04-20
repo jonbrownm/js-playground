@@ -1,0 +1,24 @@
+.cmp-gallery-carousel {
+	margin: 3rem 0;
+
+	.cmp-gallery-carousel_canvas {
+		width: 100%;
+		height: 400px;
+		overflow-x: scroll;
+		overflow-y: hidden;
+
+		.cmp-gallery-carousel_rig {
+			margin: 0;
+			width: 10000px;
+			list-style: none;
+
+			.cmp-gallery-carousel_rig-panel {
+				display: inline-block;
+				background: $light-gray;
+			}
+
+		}
+
+	}
+
+}
