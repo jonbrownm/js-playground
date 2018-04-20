@@ -2,10 +2,9 @@
 import {setupRig} from './setupRig';
 
 
-export const setupRigPanel = (elementCanvas, elementRig, elementRigPanel) => {
+export const setupRigPanel = (elementCanvas, elementRig, elementRigPanel, elementCanvasWidth) => {
 
-	var elementCanvasHeight = elementCanvas.offsetHeight,
-		elementCanvasWidth = elementCanvas.offsetWidth;
+	var elementCanvasHeight = elementCanvas.offsetHeight;
 
 	
 	elementRigPanel.forEach(function(panel){
