@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image Interchange</title>
+		<link rel="stylesheet" href="css/app.min.css">
+	</head>
+	<body>
+		<div class="cmp-image-interchange" data-component-name="cmpImageInterchange">
+			<div class="row">
+				<div class="columns small-12">
+					<section>
+						<img src='images/test.jpg' />
+						<img data-img-interchange="medium" src='images/test.jpg' />
+						<img data-img-interchange="large" src='images/test.jpg' />
+						<img data-img-interchange="progressive" src='images/test.jpg' />
+						<img data-img-interchange="prog" src='images/test.jpg' />
+						<br />
+						<div style="background-image:url('images/test.jpg')"></div>
+						<div data-img-interchange="medium" style="background-image:url('images/test.jpg')"></div>
+						<div data-img-interchange="large" style="background-image:url('images/test.jpg')"></div>
+						<div data-img-interchange="progressive" style="background-image:url('images/test.jpg')"></div>
+						<div data-img-interchange="prog" style="background-image:url('images/test.jpg')"></div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
