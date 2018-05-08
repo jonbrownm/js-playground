@@ -29,7 +29,9 @@ This will publish the contents of `dist` to <http://dev.jonbrownm.com/js-playgro
 
 ## Foundation
 
-Foundation (Version 6.4.3) is available in this project. It can be removed if it's not required for the working project. The imported components can be customised as required. The settings file includes tons of variables that can be customized for each component. The full documentation for Foundation can be found at <https://foundation.zurb.com/sites/docs/>.
+The Foundation framework is available in this project and it can be customised as required. It is a responsive front-end framework that make it simple to develop websites and applications. The HTML, CSS & Javascript can be fully customised. The full documentation for Foundation can be found at <https://foundation.zurb.com/sites/docs/>.
+
+* `npm i`
 
 ## Repository structure
 The following information details the structure of the codebase…
