@@ -1,3 +1,8 @@
+## JS Playground
+
+JS Playground is a collection of simple browser based tools to complete various functions. These are self-contained components that present a simple front-end to the user.
+
+
 ## Overview
 
 This repository contains everything for building, running and deploying dev.jonbrownm.com/js-playground.
