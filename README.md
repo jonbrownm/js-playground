@@ -5,9 +5,9 @@ JS Playground is a collection of simple browser based tools to complete various 
 
 ## Overview
 
-This repository contains everything for building, running and deploying dev.jonbrownm.com/js-playground.
+This repository contains everything for building, running and deploying portfolio.jonbrownm.com/js-playground.
 
-*Latest version running on <http://dev.jonbrownm.com/js-playground>*
+*Latest version running on <http://portfolio.jonbrownm.com/js-playground>*
 
 ## Installation
 To get the project up and running, and view the project in the browser, complete the following steps:
@@ -30,7 +30,7 @@ To deploy this to the current production environment, you can deploy a static in
 
 * `grunt prod`
 
-This will publish the contents of `dist` to <http://dev.jonbrownm.com/js-playground>.
+This will publish the contents of `dist` to <http://portfolio.jonbrownm.com/js-playground>.
 
 ## Foundation
 
@@ -69,6 +69,6 @@ The following information details the structure of the codebase…
 ## Components
 To following components can be found in this repository:
 
-* <http://dev.jonbrownm.com/js-playground/card-selector.html>
-* <http://dev.jonbrownm.com/js-playground/category-article-selector.html>
-* <http://dev.jonbrownm.com/js-playground/country-search.html>
+* <http://portfolio.jonbrownm.com/js-playground/card-selector.html>
+* <http://portfolio.jonbrownm.com/js-playground/category-article-selector.html>
+* <http://portfolio.jonbrownm.com/js-playground/country-search.html>
